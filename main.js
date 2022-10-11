@@ -1,16 +1,9 @@
-
-
-
-var items = document.querySelectorAll('.list-group-item');
-items[2].style.background = 'green';
-items.forEach((item)=>{item.style.color='purple';
-item.style.fontWeight ='bold';})
-
-var newliv = document.getElementsByClassName('new-li');
-
-newliv[0].textContent = "Changed it to this text by javascript using getelementsbyclassname";
-
-var nt = document.getElementsByTagName('li');
-let l = nt.length;
-
-nt[l-1].textContent ="edited it with tag name"
+var items = document.querySelectorAll(".list-group-item");
+items[1].style.background ='yellow'
+// items[2].style.display = 'none';
+items[1].style.color ='brown';
+let i=0;
+while(i<items.length){
+    items[i].style.background = 'green';
+    i= i+2;
+}
